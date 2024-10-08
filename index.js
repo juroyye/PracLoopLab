@@ -13,10 +13,8 @@
 //     }
 // }
 
-// const { type } = require("express/lib/response");
 
-
-// // for(let i = 1; i < 100;++i)console.log((i%3?'':'Fizz') + (i%5?'':'Buzz') || i)
+// for(let i = 1; i < 100;++i)console.log((i%3?'':'Fizz') + (i%5?'':'Buzz') || i)
 
 // ////////////////////////////////////
 
@@ -52,39 +50,39 @@
 
 // console.log("Number is prime")
 
-/////////////////////////////////////////////////
+// /////////////////////////////////////////////////
 
-// PART 3
+// // PART 3
 
-const arr = ["ID,Name,Occupation,Age,\n42,Bruce,Knight,41,\n57,Bob,Fry Cook,19,\n63,Blaine,Quiz Master,58,\n98,Bill,Doctor’s Assistant,26"]
+// const arr = ["ID,Name,Occupation,Age,\n42,Bruce,Knight,41,\n57,Bob,Fry Cook,19,\n63,Blaine,Quiz Master,58,\n98,Bill,Doctor’s Assistant,26"]
 
-let cell = "";
-let row = [];
+// let cell = "";
+// let row = [];
 
-function sectionArr(){
-    for(let i = 0; i < arr.length; i++){
-        let c = arr[i];
+// function sectionArr(){
+//     for(let i = 0; i < arr.length; i++){
+//         let c = arr[i];
 
-        if(c === ","){
-            row.push(cell)
-            cell = "";
-        } else if (c === "\n"){
-            row.push(cell)
-            console.log(...row)
-            cell = "";
-            row = [];
-        } else {
-            cell += c;
-        }
-    }
+//         if(c === ","){
+//             row.push(cell)
+//             cell = "";
+//         } else if (c === "\n"){
+//             row.push(cell)
+//             console.log(...row)
+//             cell = "";
+//             row = [];
+//         } else {
+//             cell += c;
+//         }
+//     }
 
-    if (cell.length > 0) {
-        row.push(cell);
-        console.log(...row);
-    }
-}
+//     if (cell.length > 0) {
+//         row.push(cell);
+//         console.log(...row);
+//     }
+// }
 
-sectionArr()
+// sectionArr()
 
 
 
